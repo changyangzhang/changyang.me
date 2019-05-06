@@ -17,7 +17,7 @@ const ContactPage = () => {
                     <div className="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US"
                          data-type="horizontal" data-theme="dark" data-vanity="changyangzhang"><a
                         className={["LI-simple-link", contactStyles.link].join(' ')} href='https://se.linkedin.com/in/changyangzhang?trk=profile-badge' target="_blank" rel="noopener noreferrer">
-                        FInd me on LinkedIn.</a></div>
+                        Find me on LinkedIn.</a></div>
                 </div>
             </Layout>
         </div>
