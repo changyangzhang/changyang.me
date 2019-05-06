@@ -1,0 +1,22 @@
+.footer{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem 0 3rem;
+  font-size: .8rem;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  width: 8rem;
+  margin-left: 5rem;
+}
+
+.link{
+  text-decoration: none;
+}

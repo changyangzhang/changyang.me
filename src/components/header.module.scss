@@ -1,0 +1,38 @@
+$light-blue:#8FC1E3;
+$middle-blue:#5085A5;
+$dark-blue:#31708E;
+$brown:#687864;
+$bg-white:#F7F9FB;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0 3rem;
+}
+
+.logo{
+  width: 12rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 10rem;
+}
+
+.nav-item {
+  color: $light-blue;
+  font-size: .9rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: $middle-blue;
+}
+
+.active-nav-item {
+  color: $dark-blue;
+}
