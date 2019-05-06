@@ -1,6 +1,9 @@
 .about{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  @media (min-width: 45rem) {
+    flex-direction: row;
+  }
 }
 
 .text{

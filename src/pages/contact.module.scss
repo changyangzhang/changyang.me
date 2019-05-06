@@ -6,12 +6,16 @@ $bg-white:#F7F9FB;
 
 .contact{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  @media (min-width: 45rem) {
+    flex-direction: row;
+  }
 }
 
 .box{
+  margin: 2rem;
   background: $light-blue;
   width: 280px;
   height: 212.22px;
