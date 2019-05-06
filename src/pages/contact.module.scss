@@ -1,0 +1,28 @@
+$light-blue:#8FC1E3;
+$middle-blue:#5085A5;
+$dark-blue:#31708E;
+$brown:#687864;
+$bg-white:#F7F9FB;
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box{
+  background: $light-blue;
+  width: 280px;
+  height: 212.22px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: $bg-white;
+  text-align: center;
+}
+
+.text{
+  margin-top: 90px;
+}
+

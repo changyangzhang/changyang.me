@@ -23,7 +23,7 @@ const Footer = () => {
         <footer className={footStyles.footer}>
             <div className={footStyles.text}>
                 <p>Created by {data.site.siteMetadata.author}, © 2019, Made in Stockholm </p>
-                <p><a href="https://github.com/changyangzhang/gastby" target="_blank" className={footStyles.link}>  Github</a></p>
+                <p><a href="https://github.com/changyangzhang/gastby" target="_blank" rel="noopener noreferrer" className={footStyles.link}>  Github</a></p>
             </div>
             <Link to='/'>
                 <img alt={data.contentfulAsset.file.fileName} src={data.contentfulAsset.file.url} className={footStyles.logo}/>
