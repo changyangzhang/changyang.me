@@ -38,7 +38,7 @@ const Note = (props) => {
           <p>{props.data.contentfulBlogPost.publishedDate}</p>
           {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
           {props.data.contentfulBlogPost.title === "Iceland Adventure 2019" &&
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/iW6Zr-zEyPM" frameBorder="0"
+            <iframe width="600" height="345" src="https://www.youtube.com/embed/iW6Zr-zEyPM" frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen title="icelandYoutube"/>}
       </Layout>

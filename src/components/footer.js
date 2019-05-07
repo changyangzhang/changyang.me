@@ -21,8 +21,8 @@ const Footer = () => {
 
     return (
         <footer className={footStyles.footer}>
-            <div className={footStyles.text}>
-                <p>Created by {data.site.siteMetadata.author}, © 2019, Made in Stockholm </p>
+            <div>
+                <p className={footStyles.text}>Created by {data.site.siteMetadata.author}, © 2019, Made in Stockholm </p>
                 <p><a href="https://github.com/changyangzhang/gastby" target="_blank" rel="noopener noreferrer" className={footStyles.link}>  Github</a></p>
             </div>
             <Link to='/'>
