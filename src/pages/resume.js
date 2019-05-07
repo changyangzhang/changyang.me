@@ -14,8 +14,8 @@ const ResumePage = () => {
                 node{
                     title
                     category
-                    startDate(formatString: "MMMM Do, YYYY")
-                    endDate(formatString: "MMMM Do, YYYY")
+                    startDate(formatString: "MMMM, YYYY")
+                    endDate(formatString: "MMMM, YYYY")
                     place
                     location
                     body
