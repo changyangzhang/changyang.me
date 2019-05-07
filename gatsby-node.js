@@ -31,7 +31,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
     res.data.allContentfulBlogPost.edges.forEach((edge) => {
         createPage({
             component: noteTemplate,
-            path: `/note/${edge.node.slug}`,
+            path: `/notes/${edge.node.slug}`,
             context: {
                 slug: edge.node.slug
             }

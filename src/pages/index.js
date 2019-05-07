@@ -24,7 +24,7 @@ const IndexPage = () => {
       <div>
           <Layout>
               <Head title="About"/>
-              <h1>你好, hello, hej!</h1>
+              <h1>你好, hello & hej!</h1>
               <div className={aboutStyles.about}>
                       <img alt={data.contentfulAsset.file.fileName} src={data.contentfulAsset.file.url} className={aboutStyles.img}/>
                       <div className={aboutStyles.text}>
