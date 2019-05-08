@@ -25,34 +25,53 @@ const ResumePage = () => {
         }
     }`);
 
+    const lists = ["Experience", "Education"];
+
     return(
         <Layout>
             <Head title="Resume"/>
-            <div>
-                <h1>Experiences</h1>
-                <ol className={resumeStyles.items}>
-                    {data.allContentfulResume.edges.filter(edge => edge.node.category === "Experiences").map((edge) => {
-                    return (
-                        <li>
-                            <div>
-                                <h3>{edge.node.place}</h3>
-                                <p>{edge.node.startDate} - {edge.node.endDate === null ? "Present" : edge.node.endDate}</p>
-                                <p>{edge.node.location}</p>
-                                {edge.node.link && <p>{edge.node.link}</p>}
-                            </div>
-                            <div>
-                                <h2>{edge.node.title}</h2>
-                                <p>{edge.node.body}</p>
-                            </div>
-                        </li>
-                    )})}
-                </ol>
-            </div>
-            <div>
-                <h1>Educations</h1>
-            </div>
-            <div>
-                <h1>Projects</h1>
+            {lists.map((section) => {
+                return(
+                    <div>
+                        <h2>{section}</h2>
+                        <ol className={resumeStyles.items}>
+                            {data.allContentfulResume.edges.filter(edge => edge.node.category === section).map((edge) => {
+                                return (
+                                    <li className={resumeStyles.box}>
+                                        <div className={resumeStyles.leftBox}>
+                                            <h4>{edge.node.place}</h4>
+                                            <p>{edge.node.startDate} - {edge.node.endDate === null ? "Present" : edge.node.endDate}</p>
+                                            <p className={resumeStyles.link}><span role="img" aria-label="pin">📍 </span>{edge.node.location}</p>
+                                            {(edge.node.link && window.innerWidth >= 500) && <a className={resumeStyles.link} href={edge.node.link} target="_blank" rel="noopener noreferrer">
+                                                <span role="img" aria-label="link">🔗 </span>{edge.node.link}</a>}
+                                        </div>
+                                        <div className={resumeStyles.rightBox}>
+                                            <h5>{edge.node.title}</h5>
+                                            {window.innerWidth >= 500 && <p>{edge.node.body}</p>}
+                                        </div>
+                                    </li>
+                                )})}
+                        </ol>
+                    </div>
+                )
+            })}
+            <div className={resumeStyles.skills}>
+                <h2>Skills</h2>
+                <div className={resumeStyles.skillsSection}>
+                    <h3>Industry Knowledge</h3>
+                    <ol>
+                        <li></li>
+                    </ol>
+                </div>
+                <div className={resumeStyles.skillsSection}>
+                    <h3>Languages</h3>
+                    <ol>
+                        <li>Mandarin (Mother tongue)</li>
+                        <li>Cantonese (Fluent)</li>
+                        <li>English (Daily use)</li>
+                        <li>Swedish (Survivable and learning)</li>
+                    </ol>
+                </div>
             </div>
         </Layout>
     )

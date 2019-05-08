@@ -7,4 +7,75 @@ $bg-white:#F7F9FB;
 .items {
   list-style-type: none;
   margin: 1rem 0;
+  display: block;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+  @media (min-width: 45rem) {
+    flex-direction: row;
+  }
+}
+
+.leftBox {
+  align-content: start;
+  width: auto;
+  line-height: 1px;
+  font-size: 15px;
+  @media (min-width: 45rem) {
+    margin-right: 3rem;
+    width: 13rem;
+  }
+}
+
+.rightBox{
+  align-content: start;
+  width: 20rem;
+  margin-top: 1rem;
+  @media (min-width: 45rem) {
+    margin-left: 3rem;
+    margin-top: 0;
+  }
+}
+
+.link{
+  text-decoration: none;
+  color: $light-blue;
+}
+
+.skills{
+  background: $light-blue;
+  margin-left: -300vw;
+  padding-left: 300vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: -300vw;
+  padding-right: 300vw;
+
+
+  h2{
+    color: $bg-white;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  h3{
+    color: $bg-white;
+    text-align: left;
+  }
+
+  ol{
+    list-style-type: none;
+    columns: 2;
+  }
+
+  li{
+    color: $bg-white;
+  }
+}
+
+.skillsSection{
+  margin-top: 1rem;
 }

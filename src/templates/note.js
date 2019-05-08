@@ -11,6 +11,7 @@ export const query = graphql`
             title
             publishedDate(formatString: "MMMM Do, YYYY")
             category
+            youtube
             body {
                 json
             }
@@ -37,10 +38,8 @@ const Note = (props) => {
                   <div className={[notesStyles.category, notesStyles.photography].join(' ')}>{props.data.contentfulBlogPost.category}</div>}
           <p>{props.data.contentfulBlogPost.publishedDate}</p>
           {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
-          {props.data.contentfulBlogPost.title === "Iceland Adventure 2019" &&
-            <iframe width="600" height="345" src="https://www.youtube.com/embed/iW6Zr-zEyPM" frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen title="icelandYoutube"/>}
+          {props.data.contentfulBlogPost.youtube && <iframe width="600" height="345" src={props.data.contentfulBlogPost.youtube} frameBorder="0"
+                                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title={props.data.contentfulBlogPost.title}/>}
       </Layout>
   )
 };
