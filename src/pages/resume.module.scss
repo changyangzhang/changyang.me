@@ -43,6 +43,17 @@ $bg-white:#F7F9FB;
 .link{
   text-decoration: none;
   color: $light-blue;
+  visibility: hidden;
+  @media (min-width: 45rem) {
+    visibility: visible;
+  }
+}
+
+.hidden{
+  visibility: hidden;
+  @media (min-width: 45rem) {
+    visibility: visible;
+  }
 }
 
 .skills{

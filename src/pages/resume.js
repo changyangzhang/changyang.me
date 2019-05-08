@@ -41,13 +41,13 @@ const ResumePage = () => {
                                         <div className={resumeStyles.leftBox}>
                                             <h4>{edge.node.place}</h4>
                                             <p>{edge.node.startDate} - {edge.node.endDate === null ? "Present" : edge.node.endDate}</p>
-                                            <p className={resumeStyles.link}><span role="img" aria-label="pin">📍 </span>{edge.node.location}</p>
-                                            {(edge.node.link && window.innerWidth >= 500) && <a className={resumeStyles.link} href={edge.node.link} target="_blank" rel="noopener noreferrer">
+                                            <p className={[resumeStyles.link, resumeStyles.hidden].join(' ')}><span role="img" aria-label="pin">📍 </span>{edge.node.location}</p>
+                                            {edge.node.link  && <a className={resumeStyles.link} href={edge.node.link} target="_blank" rel="noopener noreferrer">
                                                 <span role="img" aria-label="link">🔗 </span>{edge.node.link}</a>}
                                         </div>
                                         <div className={resumeStyles.rightBox}>
                                             <h5>{edge.node.title}</h5>
-                                            {window.innerWidth >= 500 && <p>{edge.node.body}</p>}
+                                            <p className={resumeStyles.hidden}>{edge.node.body}</p>
                                         </div>
                                     </li>
                                 )})}
