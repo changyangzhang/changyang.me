@@ -19,6 +19,19 @@ $bg-white:#F7F9FB;
   }
 }
 
+.projects{
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.projectsText{
+  font-size: medium;
+  font-style: normal;
+}
+
 .leftBox {
   align-content: start;
   width: auto;
@@ -43,16 +56,16 @@ $bg-white:#F7F9FB;
 .link{
   text-decoration: none;
   color: $light-blue;
-  visibility: hidden;
+  display: none;
   @media (min-width: 45rem) {
-    visibility: visible;
+    display: block;
   }
 }
 
 .hidden{
-  visibility: hidden;
+  display: none;
   @media (min-width: 45rem) {
-    visibility: visible;
+    display: block;
   }
 }
 
@@ -64,7 +77,7 @@ $bg-white:#F7F9FB;
   padding-bottom: 1rem;
   margin-right: -300vw;
   padding-right: 300vw;
-
+  margin-bottom: 2rem;
 
   h2{
     color: $bg-white;
@@ -85,8 +98,36 @@ $bg-white:#F7F9FB;
   li{
     color: $bg-white;
   }
+
+  p{
+    color: white;
+    font-size: small;
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
+  }
 }
 
 .skillsSection{
   margin-top: 1rem;
+}
+
+.button{
+  margin: .2rem;
+  background: $dark-blue;
+  width: 5rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+  left: 40%;
+  position: relative;
+
+  a{
+    text-decoration: none;
+  }
+
+  p{
+    font-size: medium;
+    font-style: normal;
+  }
 }

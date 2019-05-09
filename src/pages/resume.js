@@ -9,7 +9,7 @@ import resumeStyles from "./resume.module.scss"
 const ResumePage = () => {
     const data = useStaticQuery(graphql`
     query{
-        allContentfulResume ( sort: { fields:startDate, order: DESC }){
+        allContentfulResume ( sort: { fields:endDate, order: DESC }){
             edges{
                 node{
                     title
@@ -60,8 +60,19 @@ const ResumePage = () => {
                 <div className={resumeStyles.skillsSection}>
                     <h3>Industry Knowledge</h3>
                     <ol>
-                        <li></li>
+                        <li>Java, Spring Framework</li>
+                        <li>JavaScript, ReactJs</li>
+                        <li>MongoDB / SQL</li>
+                        <li>HTML / SCSS</li>
+                        <li>Amazon Web Services</li>
+                        <li>GIT / Jenkins / Docker</li>
+                        <li>Performance Testing</li>
+                        <li>Groovy, Spock Framework</li>
                     </ol>
+                    <p>This site is build on Gatsby, ReactJS, GraphQL and a CMS.</p>
+                    <div className={resumeStyles.button}>
+                        <a href="https://github.com/changyangzhang" target="_blank" rel="noopener noreferrer"><p>Github</p></a>
+                    </div>
                 </div>
                 <div className={resumeStyles.skillsSection}>
                     <h3>Languages</h3>
@@ -73,6 +84,20 @@ const ResumePage = () => {
                     </ol>
                 </div>
             </div>
+            <h2>Projects</h2>
+            <ol className={resumeStyles.items}>
+                {data.allContentfulResume.edges.filter(edge => edge.node.category === "Projects").map((edge) => {
+                    return (
+                        <li className={resumeStyles.projects}>
+                            <h5>{edge.node.title}</h5>
+                            <p>{edge.node.startDate} - {edge.node.endDate === null ? "Present" : edge.node.endDate}</p>
+                            <p className={resumeStyles.projectsText}>{edge.node.body}</p>
+                            <p>Deployed on {edge.node.location}</p>
+                            {edge.node.link  && <a className={resumeStyles.link} href={edge.node.link} target="_blank" rel="noopener noreferrer">
+                                <span role="img" aria-label="link">🔗 </span>{edge.node.link}</a>}
+                        </li>
+                    )})}
+            </ol>
         </Layout>
     )
 };

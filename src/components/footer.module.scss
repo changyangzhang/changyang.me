@@ -1,16 +1,20 @@
+$bg-white:#F7F9FB;
 .footer{
-  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 1rem 0 3rem;
   font-size: .8rem;
+  background: gray;
+  padding-left: 300vw;
+  padding-right: 300vw;
+  margin: 3rem -300vw 0;
 }
 
 .text{
   display: flex;
   flex-direction: column;
-  color: black;
+  color: $bg-white;
+  margin-top: 1rem;
 }
 
 .logo{
@@ -23,4 +27,5 @@
 
 .link{
   text-decoration: none;
+  color: $bg-white;
 }
