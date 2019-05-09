@@ -5,6 +5,21 @@ $dark-blue:#31708E;
 $brown:#687864;
 $bg-white:#F7F9FB;
 
+@media screen and (max-width: 550px)
+{
+  height: 12%;
+  bottom: 10px;
+  width: 178px;
+  left: calc(50% - 75px);
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 html {
   font-family: sans-serif;
