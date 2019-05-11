@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout";
 import Head from "../components/head";
-import {graphql, useStaticQuery} from "gatsby";
+import {graphql, Link, useStaticQuery} from "gatsby";
 
 import resumeStyles from "./resume.module.scss"
 
@@ -21,6 +21,12 @@ const ResumePage = () => {
                     body
                     link
                 }
+            }
+        }
+        contentfulAsset( title: { eq: "CV"} ) {
+            file{
+                fileName
+                url
             }
         }
     }`);
@@ -98,6 +104,14 @@ const ResumePage = () => {
                         </li>
                     )})}
             </ol>
+            <div className={resumeStyles.contacts}>
+                <h2>Want to know more?</h2>
+                <p>Now you have known a bit about me, I am excited to get to talk with you.</p>
+                <div className={resumeStyles.buttons}>
+                    <Link to="/contact"><p>Contact Me</p></Link>
+                    <a href={data.contentfulAsset.file.url} target="_blank" rel="noopener noreferrer"><p>Download</p></a>
+                </div>
+            </div>
         </Layout>
     )
 };

@@ -112,19 +112,71 @@ $bg-white:#F7F9FB;
 .button{
   margin: .2rem;
   background: $dark-blue;
-  width: 5rem;
+  width:fit-content;
   height: 1.5rem;
   border-radius: 5px;
   text-align: center;
   left: 40%;
   position: relative;
-
   a{
     text-decoration: none;
+    left: 40%;
   }
-
   p{
     font-size: medium;
     font-style: normal;
+    margin-right: .5rem;
+    margin-left: .5rem;
+  }
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: -100vm;
+  a{
+    margin: .2rem;
+    background: $dark-blue;
+    width:10rem;
+    height: 3rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  Link{
+    margin: .2rem;
+    background: $dark-blue;
+    width:10rem;
+    height: 3rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  p{
+    font-size: large;
+    font-style: normal;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    margin-top: .6rem;
+  }
+}
+
+.contacts{
+  background: $light-blue;
+  margin-left: -300vw;
+  margin-right: -300vw;
+  padding: 1rem 300vw;
+  margin-bottom: -3rem;
+  h2{
+    color: $bg-white;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  p{
+    color: white;
+    font-size: small;
+    text-align: center;
+    text-decoration: none;
   }
 }
