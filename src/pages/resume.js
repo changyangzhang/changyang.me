@@ -63,6 +63,7 @@ const ResumePage = () => {
             })}
             <div className={resumeStyles.skills}>
                 <h2>Skills</h2>
+                <p>However difficult life may seem, there is always something you can do and succeed at.   --Stephen Hawking</p>
                 <div className={resumeStyles.skillsSection}>
                     <h3>Industry Knowledge</h3>
                     <ol>
