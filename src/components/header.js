@@ -30,6 +30,9 @@ const Header = () => {
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/notes">Notes</Link>
                     </li>
                     <li>
+                        <p><a href="https://www.instagram.com/changyang.zhang/" target="_blank" rel="noopener noreferrer" className={headerStyles.navItem}>Photos</a></p>
+                    </li>
+                    <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">Contact</Link>
                     </li>
                 </ul>
