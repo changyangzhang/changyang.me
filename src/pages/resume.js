@@ -68,7 +68,7 @@ const ResumePage = () => {
                     <h3>Industry Knowledge</h3>
                     <ol>
                         <li>Java, Spring Framework</li>
-                        <li>JavaScript, ReactJs</li>
+                        <li>JavaScript, ReactJs, NodeJs</li>
                         <li>MongoDB / SQL</li>
                         <li>HTML / SCSS</li>
                         <li>Amazon Web Services</li>
