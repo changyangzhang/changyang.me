@@ -2,7 +2,8 @@
   Repo for my personal site
 </h1>
 
-_https://www.changyang.me/_
+_https://www.changyang.me/_ 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d1c598dc-a991-45e5-a5b7-9b21b7d26470/deploy-status)](https://app.netlify.com/sites/changyang/deploys)
 
 ## 🚀 Deployment
 
