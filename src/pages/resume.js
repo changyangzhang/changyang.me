@@ -78,7 +78,7 @@ const ResumePage = () => {
                     </ol>
                     <p>This site is build on Gatsby, ReactJS, GraphQL and a CMS.</p>
                     <div className={resumeStyles.button}>
-                        <a href="https://github.com/changyangzhang" target="_blank" rel="noopener noreferrer"><p>Github</p></a>
+                        <a href="https://github.com/changyangzhang/changyang.me" target="_blank" rel="noopener noreferrer"><p>Github</p></a>
                     </div>
                 </div>
                 <div className={resumeStyles.skillsSection}>
