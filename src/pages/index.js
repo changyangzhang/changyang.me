@@ -31,10 +31,9 @@ const IndexPage = () => {
                     <div className={aboutStyles.text}>
                         <p>I am a full stack web developer. Come from Shenzhen, China but have been living in Stockholm,
                             Sweden since 2012.</p>
-                        <p>Love coding <span role="img" aria-label="coding">💻</span>, traveling <span role="img"
-                                                                                                       aria-label="traveling">🗺️</span>,
-                            nature <span role="img" aria-label="nature">🌲</span>, working-out <span role="img"
-                                                                                                     aria-label="working-out">💪</span>,
+                        <p>Love coding <span role="img" aria-label="coding">💻</span>, traveling <span role="img" aria-label="traveling">🗺️</span>,
+                            photography <span role="img" aria-label="traveling">📷</span>,
+                            nature <span role="img" aria-label="nature">🌲</span>, working-out <span role="img" aria-label="working-out">💪</span>,
                             badminton <span role="img" aria-label="badminton">🏸</span> and PC strategy games <span
                                 role="img" aria-label="games">🎮</span>.</p>
                         <p>Currently learning Swedish <span role="img" aria-label="se">🇸🇪</span> and front crawl<span
