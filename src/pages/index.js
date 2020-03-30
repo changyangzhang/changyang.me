@@ -36,8 +36,9 @@ const IndexPage = () => {
                             nature <span role="img" aria-label="nature">🌲</span>, working-out <span role="img" aria-label="working-out">💪</span>,
                             badminton <span role="img" aria-label="badminton">🏸</span> and PC strategy games <span
                                 role="img" aria-label="games">🎮</span>.</p>
-                        <p>Currently learning Swedish <span role="img" aria-label="se">🇸🇪</span> and volleyball<span
-                            role="img" aria-label="volleyball">🏐</span>.</p>
+                        <p>Currently learning Swedish <span role="img" aria-label="se">🇸🇪</span>, volleyball<span
+                            role="img" aria-label="volleyball">🏐</span> and drums<span
+                            role="img" aria-label="drums">🥁</span>.</p>
                         <h6>Keep your face always toward the sunshine, and shadows will fall behind you. -- Walt Whitman</h6>
                         <Link to="/contact" className={aboutStyles.link}>Grab a cup of green tea?</Link>
                     </div>
