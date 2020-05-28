@@ -67,16 +67,16 @@ const ResumePage = () => {
                 <div className={resumeStyles.skillsSection}>
                     <h3>Industry Knowledge</h3>
                     <ol>
-                        <li>Java, Spring Framework</li>
-                        <li>JavaScript, ReactJs, NodeJs</li>
                         <li>Golang</li>
+                        <li>Java, Spring Boot Framework</li>
+                        <li>JavaScript, ReactJs</li>
                         <li>MongoDB / SQL</li>
                         <li>HTML / SCSS</li>
                         <li>Amazon Web Services</li>
                         <li>GIT / Jenkins / Docker</li>
                         <li>Groovy, Spock Framework</li>
                     </ol>
-                    <p>This site is build on Gatsby, ReactJS, GraphQL and a CMS.</p>
+                    <p>This site is build on Gatsby, ReactJS, GraphQL and configured by a CMS.</p>
                     <div className={resumeStyles.button}>
                         <a href="https://github.com/changyangzhang/changyang.me" target="_blank" rel="noopener noreferrer"><p>Github</p></a>
                     </div>
