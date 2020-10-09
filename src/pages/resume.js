@@ -110,7 +110,6 @@ const ResumePage = () => {
                 <p>Now you have known a bit about me, I am excited to get to talk with you.</p>
                 <div className={resumeStyles.buttons}>
                     <Link to="/contact"><p>Contact Me</p></Link>
-                    <a href={data.contentfulAsset.file.url} target="_blank" rel="noopener noreferrer"><p>Download</p></a>
                 </div>
             </div>
         </Layout>
